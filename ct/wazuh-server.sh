@@ -8,21 +8,21 @@ source <(curl -s https://raw.githubusercontent.com/community-scripts/Mrgove10/ma
 function header_info {
 clear
 cat <<"EOF"
- _       __                         __            _____
-| |     / /  ____ _ ____  __  __   / /_          / ___/  ___    _____ _   __  ___    _____
-| | /| / /  / __ `//_  / / / / /  / __ \         \__ \  / _ \  / ___/| | / / / _ \  / ___/
-| |/ |/ /  / /_/ /  / /_/ /_/ /  / / / /        ___/ / /  __/ / /    | |/ / /  __/ / /
-|__/|__/   \__,_/  /___/\__,_/  /_/ /_/        /____/  \___/ /_/     |___/  \___/ /_/
+ _       __                  __      _____
+| |     / /___ _____  __  __/ /_    / ___/___  _____ _   _____  _____
+| | /| / / __ `/_  / / / / / __ \   \__ \/ _ \/ ___/| | / / _ \/ ___/
+| |/ |/ / /_/ / / /_/ /_/ / / / /  ___/ /  __/ /    | |/ /  __/ /
+|__/|__/\__,_/ /___/\__,_/_/ /_/  /____/\___/_/     |___/\___/_/
 EOF
 }
 header_info
 echo -e "Loading..."
 APP="Wazuh-server"
-var_disk="5"
+var_disk="10"
 var_cpu="2"
 var_ram="1024"
-var_os="debian"
-var_version="12"
+var_os="ubuntu"
+var_version="24.04"
 variables
 color
 catch_errors

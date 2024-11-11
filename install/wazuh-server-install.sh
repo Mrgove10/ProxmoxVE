@@ -29,33 +29,6 @@ echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4
 apt-get update
 msg_ok "Installed Wazuh Repo"
 
-msg_info "Installing Wazuh Indexer"
-apt-get -y install wazuh-indexer
+msg_info "Installing Wazuh Server All in one"
+curl -sO https://packages.wazuh.com/4.9/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
 msg_ok "Installed Wazuh Indexer"
-
-msg_info "Installing Wazuh Server"
-apt-get -y install wazuh-manager
-apt-get -y install filebeat
-msg_ok "Installed Wazuh Server"
-
-msg_info "Installing Wazuh Dashboard"
-apt-get -y install wazuh-dashboard
-msg_ok "Installed Wazuh Dashboard"
-
-msg_info "Starting Wazuh Indexer"
-systemctl daemon-reload
-systemctl enable wazuh-indexer
-systemctl start wazuh-indexer
-msg_ok "Started Wazuh Indexer"
-
-msg_info "Starting Wazuh Server"
-systemctl daemon-reload
-systemctl enable filebeat
-systemctl start filebeat
-msg_ok "Started Wazuh Server"
-
-msg_info "Starting Wazuh Dashboard"
-systemctl daemon-reload
-systemctl enable wazuh-dashboard
-systemctl start wazuh-dashboard
-msg_info "Starting Wazuh Dashboard"

@@ -20,9 +20,9 @@
             "resources": {
                 "cpu": "2",
                 "ram": "1024",
-                "hdd": "5",
-                "os": "debian",
-                "version": "12"
+                "hdd": "10",
+                "os": "ubuntu",
+                "version": "24.04"
             }
         }
     ],
