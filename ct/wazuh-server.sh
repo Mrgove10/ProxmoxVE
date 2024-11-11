@@ -8,8 +8,11 @@ source <(curl -s https://raw.githubusercontent.com/community-scripts/ProxmoxVE/m
 function header_info {
 clear
 cat <<"EOF"
-WAZUH     
- 
+ _       __                         __            _____
+| |     / /  ____ _ ____  __  __   / /_          / ___/  ___    _____ _   __  ___    _____
+| | /| / /  / __ `//_  / / / / /  / __ \         \__ \  / _ \  / ___/| | / / / _ \  / ___/
+| |/ |/ /  / /_/ /  / /_/ /_/ /  / / / /        ___/ / /  __/ / /    | |/ / /  __/ / /
+|__/|__/   \__,_/  /___/\__,_/  /_/ /_/        /____/  \___/ /_/     |___/  \___/ /_/
 EOF
 }
 header_info
