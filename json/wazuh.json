@@ -9,7 +9,7 @@
     "updateable": true,
     "privileged": false,
     "interface_port": "443",
-    "documentation": null,
+    "documentation": "https://documentation.wazuh.com/current/index.html",
     "website": "https://github.com/wazuh/wazuh",
     "logo": "https://avatars.githubusercontent.com/u/13752566?v=4",
     "description": "Wazuh is a free and open source security platform that unifies XDR and SIEM capabilities. It protects workloads across on-premises, virtualized, containerized, and cloud-based environments.",
