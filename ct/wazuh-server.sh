@@ -72,3 +72,4 @@ echo -e "${APP} dashboard should be reachable by going to the following URL.
          ${BL}https://${IP}${CL} \n
          You can now install wWazuh agent on over servers \n
          "
+  

@@ -30,5 +30,7 @@ apt-get update
 msg_ok "Installed Wazuh Repo"
 
 msg_info "Installing Wazuh Server All in one"
-curl -sO https://packages.wazuh.com/4.9/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
+curl -sO https://packages.wazuh.com/4.9/wazuh-install.sh
+
+sudo bash ./wazuh-install.sh -a
 msg_ok "Installed Wazuh Indexer"
